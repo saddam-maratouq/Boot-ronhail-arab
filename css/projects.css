@@ -1,0 +1,15 @@
+
+
+.project .project-info p {
+    width: 406px;
+    max-width: 100%;
+    line-height: 2;
+}
+
+
+
+@media (max-width: 768px) { 
+    .project .project-info p {
+        width: auto !important;
+    }
+ }

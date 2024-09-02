@@ -1,0 +1,713 @@
+/* General varibles  */
+
+/* note : play with opacity 0.8   */
+
+:root {
+    --main-color: #FFC527;
+    --subhead: #1E2126;
+    --bg-nav-link: #F4F4F4;
+    --overlay-bg : rgb(42, 48, 54, 0.3);   
+    --news-card-color : #F2F2F2 ;
+   
+    /* padding */
+    --main-padding: 60px;
+}
+
+
+/*  */
+
+
+/* back  */
+
+/* <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"> */
+
+
+
+/* General style   */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    font-family: "Tajawal", sans-serif;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+
+i {
+    color: var(--main-color)
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+/*  */
+
+
+/* components  */
+
+.page-section {
+    padding: var(--main-padding) 0;
+}
+
+
+.main-title {
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.main-title::after {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    right: 0;
+    width: 100px;
+    height: 6px;
+    color: black;
+    background-color: var(--main-color);
+}
+
+/*  */
+
+
+
+
+/* Sub haad  */
+
+.sub-head {
+    background-color: var(--subhead);
+    position: relative;
+    /* margin-top: 0px; */
+   
+}
+
+.sub-head-icon i {
+    padding: 0 5px;
+}
+
+
+.d-suporet div span {
+    font-size: 12px;
+}
+
+
+.d-suporet div:not(:first-child) span {
+    border-right: 1px solid #949494;
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+/*  */
+
+
+
+/* Nav  */
+
+
+.navbar {
+    position: sticky;
+    top: 0; 
+    width: 100%;
+    z-index: 1000; /* Make sure it's above other elements */
+} 
+
+
+
+
+.nav-logo {
+    height: 50px
+}
+
+
+.navbar-nav li a {
+    padding: 30px 0;
+    transition: 0.5s 0.3s linear;
+    margin: 0 5px;
+}
+
+
+
+
+.dropdown-menu li .dropdown-item {
+    /* text-align: center !important; */
+    padding: 10px 10px !important;
+    margin: 0 !important;
+
+}
+
+
+
+.navbar-nav li a:hover,
+.navbar-nav li a:focus {
+    color: var(--main-color) !important;
+    background-color: var(--bg-nav-link)
+}
+
+
+.dropdown-toggle::after {
+    vertical-align: middle !important;
+}
+
+
+/* End Nav   */
+
+
+
+/* Landing  Carsoul   */
+
+.carousel-item {
+    height: 70dvh;
+    min-height: 300px
+}
+
+@media (max-width: 768px) { 
+    .carousel-item {
+        min-height: 100px;
+        height: 0;
+    }
+}
+
+.caption-1 {
+    bottom: 259px;
+    z-index: 2;
+    left: -15%;
+}
+
+.caption-1 h5 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.caption-1 p {
+    font-size: 20px;
+}
+
+.captions {
+    bottom: 259px;
+}
+
+.captions h5 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.captions p {
+    margin-top: 30px;
+    font-size: 20px
+}
+
+
+.carsoul-btn {
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* carsoul icon style  */
+
+.carousel-control-next-icon,
+
+.carousel-control-prev-icon {
+    height: 4rem;
+    /* background-color: var(--bg-nav-link); */
+    /* color: #222 !important; */
+    display: inline-block;
+}
+
+
+/*  */
+
+
+
+
+
+/* Blog   */
+
+
+.service-card {
+    /* border: 1px solid gray; */
+    max-height: 550px;
+    max-width: 100% !important;
+}
+
+.service-card img {
+    /* min-width: 400px; */
+}
+
+.btn-card-service  {
+    width: 200px;
+}   
+
+
+
+.news-thumb {
+    transition: 1s 0.5s ease-out;
+
+}
+
+.news-thumb:hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.news-thumb span {
+    display: inline-block;
+    width: 270px;
+    max-width: 100%;
+    margin-right: 5px;
+    
+}
+
+
+/* end blog */
+
+
+
+
+/* chouse us  */
+
+
+.chouse-us {
+    padding: var(--main-padding) 0 ;
+}
+
+
+.chouse-img {
+    height: 300px;
+    max-width: 100%;
+    
+}
+
+
+.box-contact-icon {
+    background-color: var(--main-color);
+    height: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.contact-us-icon {
+    font-size: 30px;
+    color: white;
+   z-index: 1;
+   
+} 
+
+
+/* End chouse us */
+
+
+
+/*  WHO WE ARE VIDEO   */
+
+.who-we-are  {
+   padding: var(--main-padding) 0 ;
+    height: 70dvh;
+    background-image: url("../img/who-we-are-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.who-title {
+    margin-top: 20px;
+    font-weight: 800;
+    margin-bottom: 180px;
+}
+
+
+.play-video {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6) ;
+    /* display: inline-block; */
+    text-align: center;
+    outline: none;
+    border: none;
+    padding: 20px;
+    transition: 1s 0.5s ease-in-out;
+     
+}
+
+.play-video i {
+
+    color: var(--main-color);
+    font-size: 70px;
+    padding-left: 10px;
+    transition: 1s 0.5s ease-in-out;
+
+}
+
+
+.play-video:hover {
+    background-color: var(--main-color);
+}
+
+.play-video:hover  i   {
+    color: white;
+}
+
+
+
+.box-video-overlay {
+    /* background-color: rgb(134, 92, 7 , 0.6 );  */
+    background-color: var(--overlay-bg );
+    height: 120dvh ;
+    width: 100% ;
+    position: absolute;
+    top: -370px;
+    left: 0;
+    visibility: hidden;
+} 
+
+
+.bulding-video {
+    aspect-ratio: 16 / 9 ;
+    width: 60%;
+    max-width: 100%;
+    /* display: none; */
+    position: absolute;
+    transform: translate(-50% , -50% );
+    top: 55%;
+    left: 50%;
+    /* display: none; */
+    /* visibility: hidden; */
+    
+    
+}
+
+
+.video-close-icon {
+  
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    left: -10;
+    position: absolute;
+    right: 335px;
+    top: 206px;
+    color: #ffff;
+}
+
+
+.play-video:focus ~ .box-video-overlay   { 
+    visibility: visible;
+}
+
+/* End We ARE  */
+
+
+
+
+/* Testmonial */
+
+.testimonials {
+    padding: var(--main-padding) 0 ;
+    /* background-color: red; */
+}
+
+.testimonials .container .main-title {
+    margin-bottom: 60px;
+}
+
+
+
+.testmonial-img {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* End Test  */
+
+
+
+/* Subscripe  */
+
+
+.subscripe {
+    padding: var(--main-padding)  0  ;
+    height: 50dvh;
+    background-image: url("../img/subscribe-our-newsletter-bg.jpg");
+    background-position: center  center ;
+    background-attachment: scroll;
+    background-size: cover;
+   
+}
+
+
+
+.subscripe .container {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top : 50%;
+    left: 46%;
+   
+}
+
+
+@media (max-width: 768px) {
+        .subscripe .container  {
+            left: 50%;
+            /* max-width: 100%; */
+        } 
+}
+
+
+
+
+
+.subscripe .container h3 {
+    font-size: 33px ;
+}
+
+
+
+
+.subs-input input {
+    width: 578px;
+    height: 40px;
+    margin-left: 10px;
+    outline: 0;
+    border: none;
+    padding-right: 20px;
+    vertical-align: middle;
+    padding-top: 5px;
+    max-width: 100%;
+}
+
+.subs-input button {
+    text-align: center;
+     width: 130px;   
+     padding: 9px 2px 8px 2px;
+     font-size: 13px;
+     vertical-align: middle;
+}
+
+
+
+/* End Subscripe  */
+
+
+
+
+/* Our News  */
+
+
+.news {
+    padding: var(--main-padding)  0 ;
+}
+
+
+.news-img {
+    width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+    transition:1s 0.5s ease-in  ;
+}
+
+
+.news-img:hover {
+    opacity: 0.6;
+}
+
+.news-info {
+    background-color: var(--news-card-color);
+    padding: 15px;
+    transition: 1s 0.5s ease-in-out;
+}
+
+.news-info a  {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    transition: inherit;
+
+}
+
+
+.news-info i {
+    color: black !important;
+    font-size: 22px;
+    vertical-align: middle;
+    transition: inherit;
+}
+
+
+.news-info a:hover ,
+.news-info i:hover {
+    color: var(--main-color) !important;
+}
+
+/* End ourNews  */
+
+
+
+/* Footer  */
+
+.web-footer {
+    padding: var(--main-padding) 0 ;
+    background-color: #081B33;
+}
+
+
+
+.fotter-logo-box {
+    padding: 20px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+
+.footer-contact , .footer-contact2  {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.footer-contact2 li  {
+    padding: 5px;
+}
+
+.footer-contact2 li a {
+    color: var(--main-color);
+    position: relative;
+    padding: 3px 0 ;
+}
+
+
+.footer-contact2 li a::after {
+    content: "\f060";
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 900;
+      margin-right: 2px;
+    vertical-align: middle;
+}
+
+
+
+.footer-news-box {
+    margin-bottom: 30px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+
+
+.footer-news-info h4 {
+    color: var(--main-color);
+    font-size: 18px;
+    margin-bottom: 1px;
+}
+
+.footer-news-info span {
+    font-size: 14px;
+}
+
+
+.f-news-img {
+    width: 50px;
+}
+
+
+/* col 4 */
+
+.contact-desc {
+    font-size: 13px ;
+}
+
+
+
+
+.footer-subscripe input {
+    height: 45px;
+    /* width: 185px; */
+    width: 100%;
+    border-radius: 100px;
+    outline: 0;
+    border: none;
+    font-size: 13px;
+    padding-right: 10px;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+
+.footer-subscripe button {
+   height: 45px;
+    /* width: 125px; */
+    width: 50%;
+    border-radius: 100px;
+    outline: 0;
+    border: none;
+    font-size: 14px;
+    padding-right: 10px;
+    text-align: center;
+    position: relative;
+    margin-right: -41px;
+    max-width: 100%;
+
+}
+
+
+@media (max-width : 768px) {
+    .footer-subscripe input ,
+    .footer-subscripe button  {
+        font-size: 9px;
+       
+    }
+}
+
+
+.social-icons i {
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 1s ease-in-out 0.5s;
+}
+
+.social-icons i:hover {
+    color: var(--main-color);
+}
+
+
+/*  */
+
+
+
+
+/*  copy right    */
+
+.copy-right {
+    background-color:  #04101E ;
+    padding: 20px 0 ;
+}
+
+
+
+.copy-desc {
+    
+}
+
+/*  */
