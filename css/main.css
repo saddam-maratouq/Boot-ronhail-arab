@@ -14,9 +14,28 @@
 }
 
 
+/*  break point code  */
+
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) { ... } */
+
+/* // Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { ... } */
+
+/* // Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) { ... } */
+
+/* // X-Large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { ... } */
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+/* @media (min-width: 1400px) { ... } */
+
+
 /*  */
-
-
 /* back  */
 
 /* <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"> */
@@ -166,10 +185,20 @@ a {
 
 /* Landing  Carsoul   */
 
+
+
+  {
+   
+}
+
 .carousel-item {
     height: 70dvh;
-    min-height: 300px
+    min-height: 320px;
+   
+    
 }
+
+
 
 @media (max-width: 768px) { 
     .carousel-item {
@@ -182,48 +211,122 @@ a {
     bottom: 259px;
     z-index: 2;
     left: -15%;
+    
 }
+
+
+
+
 
 .caption-1 h5 {
     font-size: 40px;
     font-weight: bold;
 }
 
+
 .caption-1 p {
     font-size: 20px;
 }
 
+
+
+
 .captions {
     bottom: 259px;
 }
+
+
+
+@media (max-width: 1200px) { 
+
+    .caption-1 {
+        left: 1%;
+        bottom : 350px !important
+    }
+
+    .captions {
+        bottom: 350px !important  ;
+    }
+
+ }
+
+ @media (max-width: 992px) {
+    .caption-1 , .captions {
+        bottom : 390px !important
+    }
+ }
+
+
 
 .captions h5 {
     font-size: 40px;
     font-weight: bold;
 }
 
-.captions p {
-    margin-top: 30px;
+.captions p:first-of-type {
+    margin-top: 10px;
     font-size: 20px
 }
+
+
+@media (max-width: 992px) { 
+    .caption-1 h5 , .captions h5  {
+        font-size: 30px;
+    }
+    .caption-1 p , .captions p  {
+        font-size: 18px;
+    }
+ }
+
+
 
 
 .carsoul-btn {
     width: 200px;
     border-radius: 10px;
+    margin-top: 20px !important;
 }
 
 /* carsoul icon style  */
 
-.carousel-control-next-icon,
 
-.carousel-control-prev-icon {
-    height: 4rem;
-    /* background-color: var(--bg-nav-link); */
-    /* color: #222 !important; */
-    display: inline-block;
+
+
+  
+.carousel-control-prev , 
+.carousel-control-next  {
+    width: 50px;
+    height: 50px;
+    /* background-color: red; */
+    background-color: var(--main-color) !important;
+    /* border-radius: 50%; */
+    opacity: 0.8;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+  
 }
 
+.carousel-control-prev  {
+    left: 5% !important;
+   
+}
+
+.carousel-control-next {
+    right: 5% !important;
+}
+
+
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    height: 3rem;
+   
+}
 
 /*  */
 

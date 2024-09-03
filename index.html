@@ -46,7 +46,7 @@
 
 <body>
   
-  <div class="sub-head    ">
+  <div class="sub-head  d-none d-md-block   ">
     <div class="container  d-flex justify-content-between align-items-center  py-2 ">
 
       <div class="sub-head-icon  ">
@@ -113,7 +113,7 @@
             <a class="nav-link" href="#chouse">معلومات عنا </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">مدونة</a>
+            <a class="nav-link" href="blog.html">مدونة</a>
           </li>
 
           <li class="nav-item">
@@ -131,16 +131,13 @@
 
 
   <!--  Landing carsoul   -->
+  <!-- to stop carsoul run auto use  data-bs-interval="false"  -->
 
-  <div class="landing">
+  <div class="landing    ">
 
-     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" > 
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
+     <div id="carouselExampleCaptions" class="carousel slide  carsoul-parent " data-bs-ride="carousel"  > 
+     
+      <div class="carousel-inner position-relative">
         <!-- item 1  -->
         <div class="carousel-item active  "  >
           <img src="./img/slide-bg-1.jpg" class="d-block w-100" alt="...">
@@ -178,11 +175,11 @@
         </div>
 
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <button class="carousel-control-prev d-none  d-lg-block " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <button class="carousel-control-next  d-none  d-lg-block " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -608,11 +605,12 @@
       <div class="row">
 
         <!-- col 1  -->
-        <div class="col-md-3 sm-6  mb-4 mb-xl-0 >
+        <div class="col-md-3 sm-6  mb-4 mb-xl-0" >
 
-          <h2  class="fotter-logo-box" >
-            <img src="./img/logo.png" alt="">
-          </h2>
+          
+           <h2  class = "fotter-logo-box"  > 
+            <img src="./img/logo.png" alt=""> 
+           </h2>
 
           <p  class="text-white" > 
             نحن دائما على استعداد لمساعدتك.
